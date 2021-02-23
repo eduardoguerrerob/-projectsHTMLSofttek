@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <form action="./forms.js" method="GET">
+        <div id="texto">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" placeholder="Digita tu nombre" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefono">Telélfono</label>
+            <input type="number" id="telefono" name="telefono">
+        </div>
+        <br>
+        <div>
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="email">
+        </div>
+        <div>
+            <label for="male">Hombre</label>
+            <input type="radio" id="male" name="genero" value="M">
+            <label for="female">Mujer</label>
+            <input type="radio" id="female" name="genero" value="F">
+        </div>
+
+        <div>
+            <label for="abap">ABAP</label>
+            <input type="checkbox" id="abap" name="ABAP" value="ABAP">
+            <label for="js">JavaScrip</label>
+            <input type="checkbox" id="js" name="JavaScrip" value="JS">
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" name="Python" value="PY">
+        </div>
+        <div>
+            <input type="password" id="clave">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url">
+        </div>
+
+        <div>
+            <select name="Nacionalidad" id="nac">
+                <option value="CO">Colombiano</option>
+                <option value="VE">Venezolano</option>
+                <option value="MX">Mexicano</option>
+            </select>
+        </div>
+
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+
+
+
+    </form>
+</body>
+
+</html>
