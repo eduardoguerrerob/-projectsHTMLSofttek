@@ -1,0 +1,38 @@
+.bigbox {
+    width: 600px;
+    height: 600px;
+    background-color: sandybrown;
+    position: relative;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+.box1 {
+    position: absolute;
+    background-color: yellow;
+    top: 0;
+    left: 0;
+}
+
+.box2 {
+    position: absolute;
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+}
+
+.box3 {
+    position: absolute;
+    background-color: red;
+    top: 0;
+    right: 0;
+}
+
+.box4 {
+    position: absolute;
+    background-color: violet;
+    bottom: 0;
+    right: 0;
+}
