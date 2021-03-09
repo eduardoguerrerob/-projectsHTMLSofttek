@@ -1,0 +1,12 @@
+@media screen and (max-width: 360px) {
+  .cab {
+    background-color: aqua;
+  }
+  .cab--titulo {
+    background-color: brown;
+  }
+  .cab--navbar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

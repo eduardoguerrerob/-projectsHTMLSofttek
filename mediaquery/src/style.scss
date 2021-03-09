@@ -1,0 +1,29 @@
+@import "./media-screen/mobile";
+@import "./media-screen/desktop";
+
+.what {
+    border: 1px solid black;
+    &--title {
+        color: blueviolet;
+    }
+    &--text {
+        background-color: red;
+    }
+}
+
+.examples {
+    border: 2px dashed red;
+    &--title {
+        color: green;
+    }
+    &--box {
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        &--img {
+            border: 3px solid black;
+            width: 70px;
+            height: 30px;
+        }
+    }
+}

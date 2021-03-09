@@ -1,0 +1,11 @@
+@media screen and (max-width: 360px) {
+    .cab {
+        background-color: aqua;
+        &--titulo {
+            background-color: brown;
+        }
+        &--navbar {
+            display: none;
+        }
+    }
+}

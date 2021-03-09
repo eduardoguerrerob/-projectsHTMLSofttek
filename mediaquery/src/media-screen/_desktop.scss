@@ -1,0 +1,13 @@
+@media screen and (min-width: 361px) {
+    .cab {
+        background-color: grey;
+        &--titulo {
+            background-color: hotpink;
+        }
+        &--navbar {
+            &-item {
+                color: blue;
+            }
+        }
+    }
+}
