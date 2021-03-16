@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.cab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  background-color: #bbbbc4;
+  padding: 0 50px;
+}
+
+.cab--logo {
+  height: 90px;
+  padding: 5px 0;
+}
+
+.cab--navbar {
+  height: 100px;
+}
+
+.cab--navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  height: 100px;
+  background-color: deeppink;
+}
+
+.cab--navbar-list-item {
+  padding: 20px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  height: 400px;
+  background-color: burlywood;
+}
+
+.container--box {
+  width: 150px;
+  height: 150px;
+  background-color: chocolate;
+  margin: 5px;
+}
+/*# sourceMappingURL=style.css.map */
