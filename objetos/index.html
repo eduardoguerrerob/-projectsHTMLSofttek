@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+
+    <script>
+        let obj = {};
+
+        let vuelo123 = {
+            numero: 123,
+            asientos: 100,
+            piloto: "Juan Acosta"
+        };
+        console.log(vuelo123);
+
+        // acceder a una propiedad del objeto
+        console.log("piloto:", vuelo123.piloto);
+
+        // arreglo de objetos
+        let vuelos = [
+            {
+                numero: 1111,
+                asientos: 100,
+                piloto: "Ana Perez",
+                tipoAvion: { marca: "Boing", modelo: 2015 }
+            },
+            {
+                numero: 222,
+                asientos: 100,
+                piloto: "Maria Paz",
+                tripulacion: ["Camilo", "Victoria"],
+                saludarTripulacion: function () { return "Hello crew" }
+            }
+        ];
+        console.log(vuelos);
+        console.log(vuelos[1].saludarTripulacion());
+
+
+        // clases
+        class Persona {
+            constructor(inombre, iapellido, iedad) {
+                this.nombre = inombre;
+                this.apellido = iapellido;
+                this.edad = iedad;
+            }
+            nombreCompleto() {
+                return this.nombre + ' ' + this.apellido;
+            }
+        }
+
+        let juan = new Persona("Juan", "Pacheco", 50);
+        console.log(juan);
+        console.log(juan.nombreCompleto());
+
+        juan.estadoCivil = "soltero";
+        console.log(juan);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays y Objectos</title>
+</head>
+
+<body>
+
+    <script>
+        let alumnos = [];
+        let marcas = ["Chevrolet", "Ford", "Fiat", "Ferrari"];
+        // los indices comienzan en cero
+        console.log(marcas[2]);  // imprime Fiat
+
+        // operaciones en un array
+        // conocer la cantidad de elementos
+        console.log(marcas.length);
+        console.log(marcas[marcas.length - 1]);
+
+        // añadir un elemento
+        console.log(marcas);
+        marcas.push("Mazda");
+        console.log(marcas);
+
+        marcas.unshift("Renault");
+        console.log(marcas);
+
+        // buscar un elemento
+        let idx = marcas.indexOf("Fiat");
+        console.log("Fiat en:", idx);
+
+        // eliminar un elemento
+        let ultimo = marcas.pop();
+        console.log(marcas);
+        console.log(ultimo);
+
+        marcas.shift();
+        console.log(marcas);
+
+        let idxFord = marcas.indexOf("Ford");
+        marcas.splice(idxFord, 1);
+        console.log("Borramos Ford:", marcas);
+
+        // ordenar el array
+        marcas.sort();
+        console.log(marcas);
+
+        // filtrar 
+        marcas = ["Chevrolet", "Ford", "Fiat", "Ferrari"];
+        console.log(marcas);
+        let impares = marcas.filter(function (elemento, index, marcas) {
+            return index % 2 !== 0;
+            /*
+            if (index % 2 !== 0)
+                return true;
+            else
+                return false;
+            */
+        });
+        console.log("impares", impares);
+
+    </script>
+</body>
+
+</html>
