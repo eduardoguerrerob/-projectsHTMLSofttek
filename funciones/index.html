@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+
+
+    <script>
+        // function + nombre + argumentos + cuerpo de la funcion
+        // forma 1
+        function sumar(n1, n2) {
+            return n1 + n2;
+        }
+        console.log(sumar(2, 5));
+
+        // forma 2
+        let multi = function (n1, n2) {
+            return n1 * n2;
+        }
+        console.log(multi(3, 5));
+
+        // forma 3 - funcion arrow
+        // argumentos + => + cuerpo de la funcion
+        // cuando es un solo argumento no necesita los parentesis
+        let saludar = nombre => {
+            return "hola " + nombre;
+        }
+        console.log(saludar("Mao"));
+
+        // cuando el cuerpo de la funcion es una sola linea
+        // no necesita las llaves
+        let registrar = (nombre, apellido) => nombre + " " + apellido + " Registrado";
+        console.log(registrar("Leidy", "Parra"))
+        console.log(registrar("Edu", "G."));
+
+        const esMayorEdad = edad => {
+            if (edad >= 18) {
+                return "Es Mayor";
+            }
+            else {
+                return "Es menor";
+            }
+        }
+        console.log(esMayorEdad(45));
+
+    </script>
+
+</body>
+
+</html>
