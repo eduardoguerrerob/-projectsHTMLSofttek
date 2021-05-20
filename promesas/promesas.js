@@ -15,7 +15,7 @@ let promesa1 = new Promise((resolve, reject) => {
     }, 6000);
 
     setTimeout(function () {
-        // tarea
+        // tareacd ..
         reject("Promesa rechazada");
     }, 4000);
 })
